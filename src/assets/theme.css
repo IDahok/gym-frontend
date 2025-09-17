@@ -1,0 +1,131 @@
+:root {
+  --gm-color-primary: #1E3A8A; /* Azul petróleo */
+  --gm-color-secondary: #10B981; /* Verde esmeralda */
+  --gm-color-accent: #F97316; /* Laranja queimado */
+  --gm-color-bg: #F3F4F6; /* Cinza claro */
+  --gm-color-text: #111827; /* Texto escuro para contraste */
+  --gm-color-text-muted: #9CA3AF; /* Cinza médio */
+  --gm-color-white: #FFFFFF;
+  --gm-color-danger: #DC2626; /* Vermelho */
+
+  /* Layout tokens */
+  --gm-sidebar-bg: #ffffff;
+  --gm-topbar-bg: #ffffff;
+  --gm-border: #e5e7eb;
+  --gm-pill-active-bg: rgba(30,58,138,0.08);
+  --gm-pill-active-text: #1E3A8A;
+}
+
+/* Base */
+html, body {
+  background: var(--gm-color-bg);
+  color: var(--gm-color-text);
+}
+
+/* Navbar personalizada */
+.gm-navbar {
+  background-color: var(--gm-color-primary) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.85);
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.router-link-exact-active {
+  color: #fff;
+}
+
+/* Botões: principal em verde esmeralda */
+.btn-primary {
+  background-color: var(--gm-color-secondary) !important;
+  border-color: var(--gm-color-secondary) !important;
+}
+.btn-primary:hover { filter: brightness(0.95); }
+
+/* Botões de destaque em laranja (usaremos warning como destaque) */
+.btn-warning {
+  background-color: var(--gm-color-accent) !important;
+  border-color: var(--gm-color-accent) !important;
+  color: #fff !important;
+}
+
+/* Botão de perigo */
+.btn-danger {
+  background-color: var(--gm-color-danger) !important;
+  border-color: var(--gm-color-danger) !important;
+}
+
+/* Cards limpos e com sombra suave */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+.card-title {
+  color: var(--gm-color-primary);
+  margin-bottom: .5rem;
+}
+
+/* Tabelas com cabeçalho destacado */
+.table thead th {
+  background: #fff;
+  color: var(--gm-color-primary);
+  border-bottom: 2px solid rgba(30,58,138,0.15);
+}
+.table tbody tr:hover { background: rgba(16,185,129,0.06); }
+
+/* Badges / indicadores */
+.badge-success, .text-success { color: var(--gm-color-secondary) !important; }
+.badge-danger, .text-danger { color: var(--gm-color-danger) !important; }
+
+/* Alerts */
+.alert-success { background: rgba(16,185,129,0.1); color: #065f46; border: none; }
+.alert-danger { background: rgba(220,38,38,0.1); color: #7f1d1d; border: none; }
+.alert-warning { background: rgba(249,115,22,0.1); color: #7c2d12; border: none; }
+
+/* Inputs limpos */
+.form-control { border-radius: 8px; border-color: #e5e7eb; }
+.form-control:focus { border-color: var(--gm-color-secondary); box-shadow: 0 0 0 .2rem rgba(16,185,129,0.25); }
+
+/* Espaçamento global em containers */
+.container, .container-fluid, .b-container { padding-top: 1rem; padding-bottom: 2rem; }
+
+/* Títulos principais */
+h1, h2, h3, h4, h5, h6 { color: var(--gm-color-primary); }
+
+/* Links */
+a { color: var(--gm-color-primary); }
+a:hover { color: #27459c; }
+
+/* Cards métricas do dashboard */
+.gm-kpi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gm-kpi .gm-kpi-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gm-color-secondary);
+}
+.gm-kpi .gm-kpi-label {
+  color: var(--gm-color-text-muted);
+}
+
+/* Dark mode */
+.gm-dark {
+  --gm-color-bg: #0f172a; /* slate-900 */
+  --gm-color-text: #e5e7eb;
+  --gm-color-text-muted: #94a3b8;
+  --gm-sidebar-bg: #111827;
+  --gm-topbar-bg: #111827;
+  --gm-border: #1f2937;
+  --gm-pill-active-bg: rgba(16,185,129,0.18);
+  --gm-pill-active-text: #10B981;
+}
+.gm-dark .card { background: #0b1220; }
+.gm-dark .table { color: var(--gm-color-text); }
+.gm-dark .bg-white { background: #0b1220 !important; }
+.gm-dark .navbar-dark .navbar-nav .nav-link { color: #e5e7eb; }
+
+
