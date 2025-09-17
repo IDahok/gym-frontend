@@ -11,6 +11,12 @@ import Attendance from '../views/Attendance.vue';
 import Payments from '../views/Payments.vue';
 import MainLayout from '../layouts/MainLayout.vue';
 import AuthLayout from '../layouts/AuthLayout.vue';
+import Employees from '../views/Employees.vue';
+import Products from '../views/Products.vue';
+import Sales from '../views/Sales.vue';
+import Settings from '../views/Settings.vue';
+import Profile from '../views/Profile.vue';
+import PaymentMethods from '../views/PaymentMethods.vue';
 
 Vue.use(Router);
 
@@ -27,6 +33,12 @@ const router = new Router({
         { path: 'plans', name: 'plans', component: Plans },
         { path: 'attendance', name: 'attendance', component: Attendance },
         { path: 'payments', name: 'payments', component: Payments }
+        ,{ path: 'employees', name: 'employees', component: Employees }
+        ,{ path: 'products', name: 'products', component: Products }
+        ,{ path: 'sales', name: 'sales', component: Sales }
+        ,{ path: 'settings', name: 'settings', component: Settings }
+        ,{ path: 'profile', name: 'profile', component: Profile }
+        ,{ path: 'payment-methods', name: 'payment-methods', component: PaymentMethods }
       ]
     },
     {

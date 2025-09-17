@@ -10,6 +10,10 @@
       <b-nav-item :to="{ name: 'plans' }">Planos</b-nav-item>
       <b-nav-item :to="{ name: 'attendance' }">Presenças</b-nav-item>
       <b-nav-item :to="{ name: 'payments' }">Pagamentos</b-nav-item>
+      <b-nav-item :to="{ name: 'employees' }">Funcionários</b-nav-item>
+      <b-nav-item :to="{ name: 'products' }">Produtos</b-nav-item>
+      <b-nav-item :to="{ name: 'sales' }">Vendas</b-nav-item>
+      <b-nav-item :to="{ name: 'payment-methods' }">Formas de Pagamento</b-nav-item>
     </b-nav>
   </div>
 </template>
